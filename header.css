@@ -1,0 +1,162 @@
+header{
+
+    padding: 125px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.headertext{
+
+    width: 850px;
+    
+}
+
+.circle{
+
+    height: 420px;
+    width: 420px;
+    max-height: 70vw;
+    max-width: 70vw;
+    overflow:hidden;
+    margin: 25px;
+    border-radius: 50%;
+    border: 10px solid var(--main-brand-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img{
+
+        width:100%;
+
+}
+
+
+nav{
+
+    margin-bottom: 120px ;
+}
+
+nav ul {
+
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+nav a {
+
+    color: var(--secondary-text-color) ;
+    text-decoration: none;
+    position: relative;
+
+
+}
+
+nav a:hover{
+
+    color: var(--text-color);
+
+}
+
+nav a::after{
+
+    content: "";
+    height: 2px;
+    width: 0;
+    background: var(--main-brand-color);
+    transition: 300ms all ease-in;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+nav a:hover::after{
+
+
+    width: 100%;
+    
+}
+
+#togglebutton{
+
+    display: none;
+
+}
+label[for="togglebutton"]{
+
+    display: none;
+
+}
+
+h3{
+
+    font-size: 35px;
+
+}
+
+@media (max-width:800px) {
+
+    label[for="togglebutton"]{
+        display: flex;
+    }
+
+    label[for="togglebutton"] span{
+    
+    font-size: 50px;
+
+    }
+
+    nav {
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        border-radius:0px 0px 15px 0px;
+        background-color:var(--secondary-color);
+
+    }
+ 
+    nav ul {
+        display: none;
+     
+    }
+
+    #togglebutton:checked ~ ul{
+        transition: all 1s ease;
+        display: flex;
+        gap: 20px;
+        padding:10px;
+        border-radius: 0px 0px 10px 0px;
+        background-color: var(--secondary-color);
+        flex-direction: column;
+    }
+
+     
+
+    
+
+    h1{
+
+        font-size: 7vw;
+        text-align: center; 
+  
+    }
+    .subheading{
+
+        font-size: 3vw;
+        text-align: center;
+    
+    }
+
+    
+}
+
+
+
+
