@@ -1,6 +1,6 @@
 header{
 
-    padding: 125px 25px;
+    padding: 100px 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +15,8 @@ header{
 
 .circle{
 
-    height: 420px;
-    width: 420px;
+    height: 430px;
+    width: 430px;
     max-height: 70vw;
     max-width: 70vw;
     overflow:hidden;
@@ -33,7 +33,6 @@ header{
         width:100%;
 
 }
-
 
 nav{
 
@@ -137,9 +136,6 @@ h3{
         flex-direction: column;
     }
 
-     
-
-    
 
     h1{
 
